@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="composer">
+    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="migrations">
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BlogPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BlogPostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_08_143639_create_blog_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_08_143639_create_blog_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_08_145416_create_blog_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_08_145416_create_blog_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,15 +155,27 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\poligon.local\resources\views\blog\admin\posts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\laravel_58\app\Models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.poligon.local">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="poligon.local" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.poligon.local" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -156,6 +190,17 @@
       <updated>1598535406986</updated>
       <workItem from="1598535409380" duration="981000" />
       <workItem from="1598536605707" duration="177000" />
+      <workItem from="1598597556851" duration="611000" />
+      <workItem from="1598598315998" duration="8668000" />
+      <workItem from="1598607671694" duration="43000" />
+      <workItem from="1598607716685" duration="7019000" />
+      <workItem from="1598620998939" duration="200000" />
+      <workItem from="1600772113457" duration="23000" />
+      <workItem from="1602675928084" duration="16000" />
+      <workItem from="1602676113496" duration="1836000" />
+      <workItem from="1602677995015" duration="1316000" />
+      <workItem from="1602679823261" duration="1832000" />
+      <workItem from="1602681699763" duration="1484000" />
     </task>
     <task id="LOCAL-00001" summary="database">
       <created>1598551576882</created>
@@ -192,27 +237,59 @@
       <option name="project" value="LOCAL" />
       <updated>1598553649267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="migrations">
+      <created>1598554909034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598554909034</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="database" />
     <MESSAGE value="routes" />
     <MESSAGE value="view" />
     <MESSAGE value="composer" />
-    <option name="LAST_COMMIT_MESSAGE" value="composer" />
+    <MESSAGE value="migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrations" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="748" y="304" key="FileChooserDialogImpl" timestamp="1600772150611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="304" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600772150611" />
+    <state x="828" y="500" key="NewPhpFileDialog" timestamp="1598606382807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="500" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598606382807" />
     <state x="455" y="69" key="RollbackChangesDialog" timestamp="1598552248829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="455" y="69" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598552248829" />
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1598551658171">
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1598554914829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598551658171" />
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598554914829" />
+    <state x="597" y="361" key="search.everywhere.popup" timestamp="1598614171483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="597" y="361" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598614171483" />
   </component>
 </project>

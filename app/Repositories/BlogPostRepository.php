@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\BlogPost as Model;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 /**
  * Class BlogPostRepository
@@ -44,5 +45,15 @@ class BlogPostRepository extends CoreRepository
             ->paginate(25);
 
         return $result;
+    }
+
+    /**
+     * @param $id
+     * Получить модель для редактирования в админке
+     * @return mixed
+     */
+    public function getEdit($id)
+    {
+        return $this->startConditions()->find($id);
     }
 }
