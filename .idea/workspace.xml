@@ -19,16 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="migrations">
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
+    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="39.2">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostUpdateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,11 +151,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\poligon.local\resources\views\blog\admin\posts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\laravel_58\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\poligon.local\resources\views\blog\admin\posts" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.poligon.local">
@@ -200,7 +196,10 @@
       <workItem from="1602676113496" duration="1836000" />
       <workItem from="1602677995015" duration="1316000" />
       <workItem from="1602679823261" duration="1832000" />
-      <workItem from="1602681699763" duration="1484000" />
+      <workItem from="1602681699763" duration="1733000" />
+      <workItem from="1602683520258" duration="1000000" />
+      <workItem from="1602696731014" duration="1715000" />
+      <workItem from="1602698472432" duration="1417000" />
     </task>
     <task id="LOCAL-00001" summary="database">
       <created>1598551576882</created>
@@ -244,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598554909034</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="39.2">
+      <created>1602683331815</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602683331815</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,25 +274,28 @@
     <MESSAGE value="view" />
     <MESSAGE value="composer" />
     <MESSAGE value="migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="migrations" />
+    <MESSAGE value="39.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="39.2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="748" y="304" key="FileChooserDialogImpl" timestamp="1600772150611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="304" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600772150611" />
-    <state x="828" y="500" key="NewPhpFileDialog" timestamp="1598606382807">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="589" y="350" key="NewPhpFileDialog" timestamp="1602697370063">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="589" y="350" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1602697370063" />
     <state x="828" y="500" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598606382807" />
     <state x="455" y="69" key="RollbackChangesDialog" timestamp="1598552248829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="455" y="69" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598552248829" />
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1598554914829">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="385" y="143" key="Vcs.Push.Dialog.v2" timestamp="1602683350660">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598554914829" />
+    <state x="385" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602683350660" />
     <state x="597" y="361" key="search.everywhere.popup" timestamp="1598614171483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
