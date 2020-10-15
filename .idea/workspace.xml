@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="39.2">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostUpdateRequest.php" afterDir="false" />
+    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="40">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +198,11 @@
       <workItem from="1602683520258" duration="1000000" />
       <workItem from="1602696731014" duration="1715000" />
       <workItem from="1602698472432" duration="1417000" />
+      <workItem from="1602700917123" duration="1156000" />
+      <workItem from="1602703120255" duration="1125000" />
+      <workItem from="1602767064482" duration="1708000" />
+      <workItem from="1602768837293" duration="748000" />
+      <workItem from="1602771266893" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="database">
       <created>1598551576882</created>
@@ -250,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602683331815</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="40">
+      <created>1602700969201</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602700969201</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +285,8 @@
     <MESSAGE value="composer" />
     <MESSAGE value="migrations" />
     <MESSAGE value="39.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="39.2" />
+    <MESSAGE value="40" />
+    <option name="LAST_COMMIT_MESSAGE" value="40" />
   </component>
   <component name="WindowStateProjectService">
     <state x="748" y="304" key="FileChooserDialogImpl" timestamp="1600772150611">
@@ -291,10 +302,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="455" y="69" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598552248829" />
-    <state x="385" y="143" key="Vcs.Push.Dialog.v2" timestamp="1602683350660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1602700973920">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598554914829" />
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602700973920" />
     <state x="385" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602683350660" />
     <state x="597" y="361" key="search.everywhere.popup" timestamp="1598614171483">
       <screen x="0" y="0" width="1920" height="1040" />
