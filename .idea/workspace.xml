@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="41">
+    <list default="true" id="5fc4c18e-7b1d-4b46-afa4-9e1c97513742" name="Default Changelist" comment="42">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +206,10 @@
       <workItem from="1602768837293" duration="748000" />
       <workItem from="1602771266893" duration="1604000" />
       <workItem from="1602828237383" duration="747000" />
-      <workItem from="1602831176833" duration="838000" />
+      <workItem from="1602831176833" duration="1290000" />
+      <workItem from="1602833142128" duration="1788000" />
+      <workItem from="1602834955738" duration="1662000" />
+      <workItem from="1602836772750" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="database">
       <created>1598551576882</created>
@@ -268,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602771391515</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="42">
+      <created>1602832554717</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602832554717</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +308,8 @@
     <MESSAGE value="39.2" />
     <MESSAGE value="40" />
     <MESSAGE value="41" />
-    <option name="LAST_COMMIT_MESSAGE" value="41" />
+    <MESSAGE value="42" />
+    <option name="LAST_COMMIT_MESSAGE" value="42" />
   </component>
   <component name="WindowStateProjectService">
     <state x="583" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602771908243">
@@ -306,20 +320,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="304" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600772150611" />
-    <state x="589" y="350" key="NewPhpFileDialog" timestamp="1602697370063">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2506" y="350" key="NewPhpFileDialog" timestamp="1602834705711">
+      <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="589" y="350" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1602697370063" />
+    <state x="2506" y="350" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1602834705711" />
     <state x="828" y="500" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598606382807" />
     <state x="455" y="69" key="RollbackChangesDialog" timestamp="1598552248829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="455" y="69" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598552248829" />
-    <state x="385" y="143" key="Vcs.Push.Dialog.v2" timestamp="1602771394046">
+    <state x="385" y="143" key="Vcs.Push.Dialog.v2" timestamp="1602832557137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602700973920" />
-    <state x="385" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602771394046" />
+    <state x="385" y="143" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602832557137" />
     <state x="597" y="361" key="search.everywhere.popup" timestamp="1598614171483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
